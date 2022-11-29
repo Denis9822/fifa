@@ -56,6 +56,48 @@
             scroll-behavior: smooth;
         }
         
+         ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        
+         ::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #6C0526;
+            border: 0px none #ffffff;
+            border-radius: 100px;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #e74159;
+        }
+        
+         ::-webkit-scrollbar-thumb:active {
+            background: #e74159;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #666666;
+            border: 0px solid #ffffff;
+            border-radius: 100px;
+        }
+        
+         ::-webkit-scrollbar-track:hover {
+            background: #666666;
+        }
+        
+         ::-webkit-scrollbar-track:active {
+            background: #333333;
+        }
+        
+         ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+        
         body {
             margin: 0;
             padding: 0;
@@ -2192,9 +2234,6 @@
                 fullWidth: false,
 
                 color: 'white',
-                // generateLabels changes from chart to chart,  check the source, 
-                // this one is from the doughut :
-                // https://github.com/chartjs/Chart.js/blob/master/src/controllers/controller.doughnut.js#L42
                 labels: {
                     fontSize: 20,
                     fontFamily: 'Arial, sans-serif',
@@ -2265,86 +2304,6 @@
             },
 
         });
-
-        // new Chart("myChart", {
-        //     type: "pie",
-        //     data: {
-        //         labels: xValues,
-        //         datasets: [{
-        //             backgroundColor: [
-        //                 'rgba(41, 121, 255, 1)',
-        //                 'rgba(38, 198, 218, 1)',
-        //                 'rgba(138, 178, 248, 1)',
-        //                 'rgba(255, 100, 200, 1)',
-        //                 'rgba(116, 96, 238, 1)',
-        //                 'rgba(215, 119, 74, 1)',
-        //                 'rgba(173, 92, 210, 1)',
-        //                 'rgba(255, 159, 64, 1)',
-        //                 'rgba(247, 247, 247, 1)',
-        //                 'rgba(227, 247, 227, 1)',
-        //             ],
-
-        //             data: yValues,
-
-        //         }],
-
-        //     },
-
-        //     options: {
-        //         plugins: {
-        //             responsive: true,
-        //             title: {
-        //                 display: true,
-        //                 text: "Allocation",
-        //                 color: 'white',
-        //                 font: {
-        //                     size: 60,
-        //                     family: 'EaSports, sans-serif'
-        //                 }
-        //             },
-        //         },
-        //         legend: {
-        //             labels: {
-        //                 // This more specific font property overrides the global property
-        //                 font: {
-        //                     size: 20,
-        //                     family: 'EaSports, sans-serif',
-        //                 },
-
-        //                 color: 'white',
-
-        //                 labels: {
-        //                     generateLabels: function(chart) {
-        //                         var data = chart.data;
-        //                         if (data.labels.length && data.datasets.length) {
-        //                             return data.labels.map(function(label, i) {
-        //                                 var meta = chart.getDatasetMeta(0);
-        //                                 var ds = data.datasets[0];
-        //                                 var arc = meta.data[i];
-        //                                 var custom = arc && arc.custom || {};
-        //                                 var getValueAtIndexOrDefault = theHelp.getValueAtIndexOrDefault;
-        //                                 var arcOpts = chart.options.elements.arc;
-        //                                 var fill = custom.backgroundColor ? custom.backgroundColor : getValueAtIndexOrDefault(ds.backgroundColor, i, arcOpts.backgroundColor);
-        //                                 var stroke = custom.borderColor ? custom.borderColor : getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
-        //                                 var bw = custom.borderWidth ? custom.borderWidth : getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
-        //                                 return {
-        //                                     // And finally : 
-        //                                     text: ds.data[i] + "% of the time " + label,
-        //                                     fillStyle: fill,
-        //                                     strokeStyle: stroke,
-        //                                     lineWidth: bw,
-        //                                     hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
-        //                                     index: i
-        //                                 };
-        //                             });
-        //                         }
-        //                         return [];
-        //                     }
-        //                 }
-        //             }
-        //         },
-        //     },
-        // });
     </script>
 </body>
 
