@@ -1703,7 +1703,8 @@
                 width: 300px;
             }
             canvas {
-                width: 85vw;
+                width: 85vw !important;
+                height: 800px !important;
             }
         }
     </style>
@@ -2152,10 +2153,15 @@
             }],
         };
 
+        var aspectRatio = true;
+        if (window.screen.width < 500) {
+            aspectRatio = false;
+        }
+
         var options = {
 
-            // responsive: false,
-            maintainAspectRatio: false,
+
+            maintainAspectRatio: aspectRatio,
 
             title: {
                 display: true,
