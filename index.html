@@ -21,7 +21,9 @@
     <meta property="twitter:description" content="FIFASPORT - the next innovative DeFi combining with DAO and Fan Sport NFT release to provide holders high passive returns with APY 200,000%" />
     <meta property="twitter:image" content="https://fifasport.io/preview.png" />
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
     <meta charSet="utf-8" />
@@ -51,6 +53,10 @@
             scroll-margin-top: 100px;
         }
         /*!sc*/
+        
+        .itm3 {
+            height: 90px;
+        }
         
         html {
             scroll-behavior: smooth;
@@ -398,6 +404,7 @@
             width: 100%;
             background-color: rgba(26, 26, 26, 0.8);
             z-index: 9999;
+            display: none;
         }
         /*!sc*/
         
@@ -488,12 +495,25 @@
             background: url(https://fifasport.io/img/mp3-vertical.png) no-repeat bottom;
             background-size: contain;
             min-height: 100vh;
+            position: relative;
+        }
+        
+        .gvPXmD:after {
+            content: '';
+            position: absolute;
+            height: 100px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(89, 223, 111, 0) 0%, rgba(26, 26, 26, 1) 100%);
+            z-index: 2;
         }
         /*!sc*/
         
         @media (min-width:992px) {
             .gvPXmD {
-                background: url(https://fifasport.io/img/mp3-hozi-grid.png) no-repeat right bottom;
+                /* background: url(https://fifasport.io/img/mp3-hozi-grid.png) no-repeat right bottom; */
+                background: url('img/fon.jpg') no-repeat;
                 background-size: cover;
                 min-height: auto;
                 padding-top: 14.2rem;
@@ -508,6 +528,7 @@
         
         .rnRhq {
             padding-right: 0rem;
+            z-index: 11;
         }
         /*!sc*/
         
@@ -905,7 +926,7 @@
         /*!sc*/
         
         .eqkTkf .image.mobile {
-            display: block;
+            display: none;
         }
         /*!sc*/
         
@@ -1561,22 +1582,26 @@
         .mainPartners_item {
             width: 260px;
             border-radius: 20px;
-            border: 1px solid rgba(241, 242, 241, 0.1);
+            border: 0px solid rgba(241, 242, 241, 0.1);
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 15px;
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgba(26, 26, 26, 0.7);
-            opacity: 0.8;
+            opacity: 1;
+            margin-left: 12px;
+            box-shadow: 0px 0px 15px 0px rgba(93, 80, 159, 0.8);
         }
         
         .mainPartners_item p {
             font-size: 16px;
-            color: white;
+            font-family: 'Open Sans', sans-serif;
+            color: #EBD8FD;
             margin-bottom: 15px;
-            font-weight: 800;
+            font-weight: 900;
             opacity: 1;
+            letter-spacing: 0.5px;
         }
         
         .mainPartners_item img {
@@ -1599,6 +1624,7 @@
             width: 400px;
             margin-left: 50px;
             margin-top: 50px;
+            z-index: 11;
         }
         
         .gvPXmD {
@@ -1625,6 +1651,7 @@
             margin-right: 0px;
             margin-top: 0px;
             margin-left: auto;
+            z-index: 11;
         }
         
         .mainStats_item {
@@ -1638,14 +1665,14 @@
             background-color: rgba(26, 26, 26, 0.9);
             -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 15px 0px rgba(189, 37, 72, 0.7);
+            box-shadow: 0px 0px 15px 0px rgba(189, 37, 72, 0.8);
         }
         
         .mainStats_item p {
-            opacity: 0.7;
+            color: #F57D98;
             font-size: 17px;
             font-weight: 600;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', sans-serif;
         }
         
         .mainStats_item h6 {
@@ -1655,15 +1682,254 @@
         }
         
         .can {
-            width: 1000px !important;
+            width: 700px !important;
             margin: 0 auto;
+            display: flex;
         }
         
         .can canvas {
             margin: 0 auto;
             margin-top: 50px;
             margin-bottom: 100px;
+            padding-bottom: 50px;
             /* width: 600px !important; */
+        }
+        
+        .google img {
+            width: 135px;
+            height: auto;
+        }
+        
+        .linkApp {
+            display: flex;
+            column-gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .iQPpuy {
+            margin-left: 140px;
+            margin-right: 138px;
+        }
+        
+        .rnRhq {
+            margin-top: 35px;
+        }
+        
+        .mainStats {
+            margin-top: 50px;
+        }
+        
+        .pre {
+            margin-left: auto;
+            margin-right: 30px;
+        }
+        
+        .men {
+            margin-left: auto;
+        }
+        
+        .certik {
+            margin-top: -40px;
+            display: flex;
+            margin-left: 85px;
+        }
+        
+        .certik svg {
+            width: 120px;
+        }
+        
+        .certik svg path {
+            fill: white;
+        }
+        
+        .htb-sg-wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .qsg-wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            margin-top: 48px;
+            padding: 40px 80px 64px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            border-radius: 16px;
+            background-color: #2B2B2B;
+            -webkit-box-shadow: 0px 0px 35px 3px rgb(45, 45, 45, 50%);
+            -moz-box-shadow: 0px 0px 35px 3px rgba(45, 45, 45, 50%);
+            box-shadow: 0px 0px 35px 3px rgb(45, 45, 45, 50%);
+        }
+        
+        .qsg-line {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .qsg-line-left {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+        
+        .qsg-number-wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 80px;
+            height: 80px;
+            padding-top: 8px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #666669;
+            color: #fff;
+            font-size: 24px;
+            line-height: 42px;
+            font-weight: 300;
+        }
+        
+        .h1 {
+            margin: 0 auto;
+            margin-top: 0px;
+            margin-bottom: 32px;
+            color: #fff;
+            font-size: 48px;
+            line-height: 66px;
+            text-align: center;
+        }
+        
+        .qsg-yellow-line {
+            width: 80px;
+            height: 1px;
+            margin-right: 32px;
+            margin-left: 32px;
+            background-color: #AB4766;
+        }
+        
+        .qsg-line-right {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            max-width: 877px;
+            padding-top: 23px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .h3.qsg {
+            margin-right: 0px;
+            margin-bottom: 24px;
+        }
+        
+        .h3 {
+            margin-top: 0px;
+            margin-right: 32px;
+            margin-bottom: 0px;
+            color: #fff;
+            font-size: 30px;
+            line-height: 42px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .p {
+            margin-bottom: 0px;
+            color: #bbbbbe;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .qsg--divider {
+            width: 100%;
+            height: 1px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: rgba(102, 102, 105, 0.3);
+        }
+        
+        .quick {
+            padding-top: 100px;
+        }
+        
+        .dds.eBXsum {
+            background: #1a1a1a url(https://fifasport.io/img/hozi-grid.png) no-repeat center;
+            background-size: auto;
+        }
+        
+        .bg_messi {
+            position: absolute;
+            width: 568px;
+            height: 700px;
+            background: url('img/messi.png') no-repeat center;
+            background-size: cover;
+            right: 420px;
+            bottom: 0px;
+        }
+        
+        .bg_main2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('img/img2.webp') no-repeat center;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            opacity: 0.1;
         }
         
         @media screen and (max-width: 1450px) {
@@ -1768,26 +2034,25 @@
     <div id="__next">
         <div class="styles__HomepageWrapper-sc-1qihn64-0 iLtKhf">
             <header class="styles__SidebarWrapper-sc-6rpd5u-0 lgsOcX">
-                <div class="styles__Sidebar-sc-6rpd5u-1 iQPpuy container">
+                <div class="styles__Sidebar-sc-6rpd5u-1 iQPpuy">
                     <nav>
-                        <a href="https://www.fifa.com/fifaplus/en/home">
+                        <a target="_blank" href="https://www.fifa.com/fifaplus/en/home">
                             <div class="siteLogo" style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
                                 <div style="box-sizing:border-box;display:block;max-width:100%"><img style="max-width:100%;display:block;margin:0;border:none;padding:0" alt="" aria-hidden="true" role="presentation" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                     /></div><noscript>
                                    
-                                    <img alt="fifa-logo" src="https://digitalhub.fifa.com/transform/3a170b69-b0b5-4d0c-bca0-85880a60ea1a/World-Cup-logo-landscape-on-dark?io=transform:fill&quality=75" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript>
-                                <img alt="fifa-logo" src="https://digitalhub.fifa.com/transform/3a170b69-b0b5-4d0c-bca0-85880a60ea1a/World-Cup-logo-landscape-on-dark?io=transform:fill&quality=75" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                    <img alt="fifa-logo" src="img/logo.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript>
+                                <img alt="fifa-logo" src="img/logo.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
                                 />
                             </div>
                         </a>
                     </nav>
-                    <nav>
+                    <nav class="men">
                         <ul>
-                            <li><a href="#about-us">About</a></li>
-                            <li><a href="#earn">EARN</a></li>
-                            <li><a href="#features">FEATURES</a></li>
-                            <li><a href="#transaction-fee">TRANSACTION FEE</a></li>
-                            <li><a href="https://www.fifa.com/fifaplus/en/cat/6afE5rM7TKmprrjyLuDQcV">NEWS</a></li>
+                            <li><a target="_blank" href="https://www.fifa.com/fifaplus/en/cat/6afE5rM7TKmprrjyLuDQcV">NEWS</a></li>
+                            <li><a href="https://tradingchart.bar/FOT" target="_blank">CHARTS</a></li>
+                            <li><a target="_blank" href="https://pancakeswap.finance/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0x9B16D595e912C25FcAE63A42941f5799fab6c44d">Buy FOT</a></li>
+                            <li><a href="https://t.me/FifaOfficialToken">Channel</a></li>
                         </ul>
                     </nav>
                     <nav class="mobile">
@@ -1811,7 +2076,7 @@
                                 alt="fifa-logo" src="https://fifasport.io/img/logo.svg" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
                             /></div>
                     </nav>
-                    <nav>
+                    <nav class="pre">
                         <div class="presale">
                             <div class="presale_left">
                                 <span>Presale</span>
@@ -1837,7 +2102,8 @@
                 </div>
             </header>
             <section class="styles__BannerWrapper-sc-1eemdnz-0 gvPXmD">
-
+                <div class="bg_main2"></div>
+                <div class="bg_messi"></div>
                 <div class="mainPartners">
                     <div class="mainPartners_item">
                         <p>
@@ -1857,6 +2123,65 @@
                         </p>
                         <img src="img/bsc.png" alt="">
                     </div>
+
+
+                    <div class="linkApp">
+                        <a href="" class="google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="">
+                        </a>
+                        <a href="" class="apple">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="certik">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.0" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<path class="st0" d="M214.2,246.2l0.8,5c0.6,4.6,0.9,9.2,0.8,13.9c0,10.3-1.2,20.5-3.6,30.5c-3.2,13.5-8.8,26.4-16.5,38
+	c-8.9,13.2-21.8,26.1-40.5,36.7l-2.3,1.3l-2.3-1.3c-18.7-10.4-31.6-23.4-40.5-36.7c-7.8-11.6-13.3-24.4-16.5-38
+	c-2.4-10-3.6-20.2-3.6-30.5c0-4.6,0.2-9.3,0.8-13.9l0.7-5c0.1-0.4,0.1-0.8,0-1.2c-0.1-0.4-0.2-0.8-0.5-1.1c-0.2-0.3-0.5-0.6-0.8-0.8
+	c-0.3-0.2-0.7-0.3-1-0.4c-0.4-0.1-0.8-0.1-1.2,0c-0.4,0.1-0.8,0.3-1.1,0.5c-0.3,0.2-0.6,0.5-0.8,0.8c-0.2,0.4-0.3,0.8-0.4,1.2
+	l-0.8,5c-0.6,4.9-0.9,9.9-0.9,14.9c0,10.8,1.3,21.5,3.8,32c1.7,7.1,4,14.1,6.9,20.8c2.9,6.7,6.4,13.1,10.5,19.2
+	c9.4,14,23,27.7,42.6,38.5l3.7,2.1c0.5,0.2,1,0.3,1.5,0.3c0.5,0,1-0.1,1.5-0.3l3.7-2.1c19.5-10.9,33.2-24.6,42.6-38.5
+	c8.2-12.2,14.1-25.8,17.4-40c2.5-10.5,3.7-21.2,3.7-32c0-5-0.3-10-0.9-15l-0.8-5c-0.1-0.4-0.2-0.8-0.4-1.2c-0.2-0.3-0.5-0.6-0.8-0.8
+	c-0.3-0.2-0.7-0.4-1.1-0.5c-0.4-0.1-0.8-0.1-1.2,0c-0.4,0.1-0.8,0.2-1.2,0.4c-0.3,0.2-0.6,0.5-0.8,0.8c-0.2,0.3-0.4,0.7-0.5,1.1
+	L214.2,246.2z"/>
+<path class="st0" d="M108.3,242.8l44.8-14.1l45.7,14.4c0.4,0.1,0.8,0.1,1.2,0.1c0.4,0,0.8-0.1,1.2-0.3c0.4-0.2,0.7-0.4,1-0.8
+	c0.3-0.3,0.5-0.7,0.5-1.1c0.1-0.4,0.1-0.8,0.1-1.2c0-0.4-0.1-0.8-0.3-1.2c-0.2-0.4-0.4-0.7-0.7-1c-0.3-0.3-0.7-0.5-1.1-0.5
+	l-46.7-14.8c-0.6-0.2-1.2-0.2-1.8,0l-45.6,14.4c-0.4,0.1-0.7,0.3-1.1,0.5c-0.3,0.3-0.6,0.6-0.7,1c-0.2,0.4-0.3,0.8-0.3,1.2
+	c0,0.4,0,0.8,0.1,1.2c0.1,0.4,0.3,0.8,0.5,1.1c0.2,0.3,0.6,0.6,1,0.8c0.3,0.2,0.7,0.3,1.2,0.3C107.5,242.9,107.9,242.9,108.3,242.8z
+	"/>
+<path class="st0" d="M86.2,247.1l64.1,129.2c0.2,0.5,0.6,0.9,1,1.2c1,0.6,2.2,0.6,3.2,0c0.5-0.3,0.9-0.7,1.2-1.2l39.1-75.5l0.1-0.1
+	l25-53.7c0.2-0.4,0.3-0.8,0.3-1.2c0-0.4,0-0.8-0.2-1.2c-0.1-0.4-0.3-0.8-0.6-1.1c-0.2-0.3-0.6-0.6-0.9-0.8c-0.3-0.2-0.7-0.3-1.2-0.3
+	c-0.4,0-0.8,0-1.2,0.1c-0.4,0.1-0.8,0.3-1.1,0.6c-0.3,0.3-0.6,0.6-0.7,1l-25,53.7l-36.4,70.3l-61.4-124c-0.2-0.3-0.5-0.7-0.7-1
+	c-0.3-0.3-0.7-0.5-1.1-0.6c-0.4-0.2-0.8-0.2-1.2-0.1c-0.4,0-0.8,0.1-1.2,0.3c-0.3,0.2-0.7,0.5-0.9,0.8c-0.2,0.3-0.4,0.7-0.5,1.1
+	c-0.1,0.4-0.2,0.8-0.1,1.2C85.9,246.3,86,246.7,86.2,247.1z"/>
+<path class="st0" d="M116.9,304.7h71.4c0.4,0,0.8-0.1,1.2-0.2c0.4-0.1,0.7-0.4,0.9-0.7c0.3-0.3,0.5-0.6,0.6-1c0.3-0.8,0.3-1.6,0-2.4
+	c-0.1-0.4-0.4-0.7-0.6-1c-0.3-0.3-0.6-0.5-0.9-0.7c-0.4-0.1-0.8-0.2-1.2-0.2h-71.4c-0.4,0-0.8,0.1-1.2,0.2c-0.4,0.1-0.7,0.4-0.9,0.7
+	c-0.3,0.3-0.5,0.6-0.6,1c-0.3,0.8-0.3,1.6,0,2.4c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.6,0.5,0.9,0.7
+	C116.1,304.6,116.5,304.6,116.9,304.7z M315.9,277.8h-46.4c-0.4,0-0.8,0.1-1.2,0.2c-0.4,0.1-0.7,0.4-0.9,0.7c-0.3,0.3-0.5,0.6-0.6,1
+	c-0.1,0.4-0.2,0.8-0.2,1.2v38.5c0,0.4,0.1,0.8,0.2,1.2c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.6,0.5,0.9,0.7c0.4,0.1,0.8,0.2,1.2,0.2h46.4
+	v6.5h-46.4c-0.6,0-1.2-0.1-1.8-0.2c-0.6-0.1-1.2-0.3-1.8-0.5c-0.6-0.2-1.1-0.5-1.6-0.8c-0.5-0.4-0.9-0.8-1.4-1.2
+	c-0.9-0.9-1.5-1.9-2-3c-0.2-0.6-0.4-1.2-0.5-1.8c-0.1-0.6-0.2-1.2-0.2-1.8V281c0-0.6,0.1-1.2,0.2-1.8c0.1-0.6,0.3-1.2,0.5-1.8
+	c0.2-0.6,0.5-1.2,0.8-1.7c0.3-0.5,0.7-1,1.2-1.4c0.4-0.4,0.9-0.8,1.4-1.2c0.5-0.3,1-0.6,1.6-0.8c0.6-0.2,1.2-0.4,1.8-0.5
+	c0.6-0.1,1.2-0.2,1.8-0.2h46.4L315.9,277.8L315.9,277.8z M403,271.3v6.5h-44.7v19.1h35.9v6.6h-35.9v19.1H403v6.5h-50.9v-57.8H403z"
+	/>
+<path d="M495.1,281.1V298c0,0.6-0.1,1.2-0.2,1.8c-0.1,0.6-0.3,1.2-0.5,1.8c-0.2,0.6-0.5,1.2-0.8,1.7c-0.4,0.5-0.7,1-1.2,1.4
+	c-0.4,0.4-0.9,0.8-1.4,1.2c-0.5,0.3-1,0.6-1.6,0.8c-0.6,0.2-1.2,0.4-1.8,0.6c-0.6,0.1-1.2,0.2-1.8,0.2h-8.5l17.5,21.5h-8.4
+	l-17.4-21.5h-20.4c-1,0-2-0.1-3-0.3v21.8h-6.3v-57.6h46.6c0.6,0,1.2,0.1,1.8,0.2c0.6,0.1,1.2,0.3,1.8,0.5c0.6,0.2,1.1,0.5,1.6,0.9
+	c1,0.7,1.8,1.6,2.5,2.6c0.3,0.5,0.6,1.1,0.8,1.7c0.2,0.6,0.4,1.2,0.5,1.8C495,279.8,495.1,280.5,495.1,281.1z M448.5,301.1h37.3
+	c0.4,0,0.8-0.1,1.2-0.2c0.4-0.1,0.7-0.3,0.9-0.7c0.3-0.3,0.5-0.6,0.6-1c0.1-0.4,0.2-0.8,0.2-1.2v-16.9c0-0.8-0.3-1.6-0.8-2.2
+	c-0.5-0.6-1.3-1-2.1-1h-37.3c-0.4,0-0.8,0.1-1.2,0.2c-0.4,0.1-0.7,0.4-0.9,0.7c-0.3,0.3-0.5,0.6-0.6,1c-0.1,0.4-0.2,0.8-0.2,1.2
+	v16.9c0,0.8,0.3,1.6,1,2.2C447,300.7,447.8,301.1,448.5,301.1z"/>
+<path class="st0" d="M528.5,271.3h55.8v6.5h-24.7v51.2h-6.3v-51.2h-24.8V271.3z M618.3,329.1v-57.7h6.3v57.7H618.3z M708.5,271.3
+	h8.1l-23.3,28.9l23.4,28.9h-8.2l-20.8-25.6h-18v25.6h-6.3v-57.7h6.4v25.6h18L708.5,271.3z"/>
+</svg>
+
+                    </div>
                 </div>
                 <div class="styles__Banner-sc-1eemdnz-1 rnRhq">
                     <h1 class="title">WELCOME</h1>
@@ -1865,16 +2190,16 @@
                         Together we chasing the Web 3.0 horizons for sports!
                     </div>
 
-                    <a href=""><button>BUY FIFA OFFICIAL TOKEN</button></a>
+                    <a target="_blank" href="https://pancakeswap.finance/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0x9B16D595e912C25FcAE63A42941f5799fab6c44d"><button>BUY FIFA OFFICIAL TOKEN</button></a>
                     <a class="tokenChart" href="https://tradingchart.bar/FOT">WATCH CHART <img src="img/verified.png" alt=""> </a>
                     <div class="contract">CONTRACT ADDRESS:</div>
-                    <div class="address"><span data-tip="true" data-for="happyFace"><b>$FFS:</b><small><i>0x6E9da6BC1ACDC6fCD01e89233D00F9d335BBAe99</i></small></span><br/></div>
+                    <div class="address"><span data-tip="true" data-for="happyFace"><b>$FOT:</b><small><i>0x9B16D595e912C25FcAE63A42941f5799fab6c44d</i></small></span><br/></div>
 
                     <div class="join-us">Join Our Community:</div>
                     <nav class="social">
                         <ul>
                             <li>
-                                <a href="https://twitter.com/FiFaSportBSC" target="_blank" rel="noreferrer">
+                                <a href="https://twitter.com/FIFAWorldCup?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noreferrer">
                                     <div>
                                         <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="twitter-logo" src="https://fifasport.io/img/social/twit-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
                                                 alt="twitter-logo" src="https://fifasport.io/img/social/twit-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
@@ -1883,7 +2208,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://t.me/FiFaSportChannel" target="_blank" rel="noreferrer">
+                                <a href="https://t.me/FifaOfficialToken" target="_blank" rel="noreferrer">
                                     <div>
                                         <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="tele-logo" src="https://fifasport.io/img/social/tl-channel-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
                                                 alt="tele-logo" src="https://fifasport.io/img/social/tl-channel-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
@@ -1891,24 +2216,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://t.me/FiFaSportGroup" target="_blank" rel="noreferrer">
-                                    <div>
-                                        <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="tele-logo" src="https://fifasport.io/img/social/tele-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                                alt="tele-logo" src="https://fifasport.io/img/social/tele-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                            /></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://discord.gg/kKKWWK2msb" target="_blank" rel="noopener noreferrer">
-                                    <div>
-                                        <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="ig-logo" src="https://fifasport.io/img/social/discord-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                                alt="ig-logo" src="https://fifasport.io/img/social/discord-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                            /></div>
-                                    </div>
-                                </a>
-                            </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -1918,13 +2226,13 @@
                         <p>
                             Стартовая цена
                         </p>
-                        <h6>0.0054</h6>
+                        <h6>0.001125</h6>
                     </div>
                     <div class="mainStats_item">
                         <p>
                             Прогноз на конец 2022
                         </p>
-                        <h6>3.7</h6>
+                        <h6>7.77</h6>
                     </div>
                     <div class="mainStats_item">
                         <p>
@@ -1941,85 +2249,64 @@
                 </div>
 
             </section>
-            <section class="styles__AboutUsWrapper-sc-16uaurv-0 dtmmek">
-                <div class="styles__AboutUs-sc-16uaurv-1 jdIGYR container">
-                    <div class="title" id="about-us">
-                        <div>ABOUT</div>
-                        <div>
-                            <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="tele-logo" src="https://fifasport.io/img/logo.svg" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                    alt="tele-logo" src="https://fifasport.io/img/logo.svg" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                /></div>
-                        </div>
-                        <div>US</div>
-                    </div>
-                    <div class="des">Incorporating NFTs, DeFi, and GameFi. FIFASPORT is the next innovative Web3 Sport-Fi Ecosystem that permits the user to launch fan tokens and submit sports match predictions using our platform. Users have a nice chance to get the huge
-                        rewards $FFS &amp; $BNB when you owned the NFTs of the team that win the match. The revenue from the sale of NFT will be used to rewards to the holders of the winning team
-                        <!-- -->&#x27;
-                        <!-- -->s NFT.</div>
-                </div>
-            </section>
-            <section class="styles__MainWrapper-sc-1f49zhi-0 bdSOrT">
-                <div class="styles__Main-sc-1f49zhi-1 fTcdlN container">
-                    <div class="styles__VideoWrapper-sc-1f49zhi-2 eRXlwf">
-                        <div class="video">
-                            <video id="my-video" class="video-js video" width="100%" height="100%" muted autoplay="true" preload="auto" data-setup="{}">
-                            <source src="video/fifa.mp4" type="video/mp4" />
-                   
-                            <p class="vjs-no-js">
-                              To view this video please enable JavaScript, and consider upgrading to a
-                              web browser that
-                              <a href="https://videojs.com/html5-video-support/" target="_blank"
-                                >supports HTML5 video</a
-                              >
-                            </p>
-                          </video>
-                        </div>
-                        <div class="video-line">
-                            <div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-                                <div style="box-sizing:border-box;display:block;max-width:100%"><img style="max-width:100%;display:block;margin:0;border:none;padding:0" alt="" aria-hidden="true" role="presentation" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjc1IiBoZWlnaHQ9IjM4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
-                                    /></div><noscript><img alt="video-line" src="https://fifasport.io/img/line-video.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                    alt="video-line" src="https://fifasport.io/img/line-video.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                /></div>
-                        </div>
-                        <div class="video-des">In World Cup 2022, by owning your favorite team&#x27;s NFT ,you can receive a huge rewards <b>$FFS</b> &amp; <b>$BNB</b> when your team wins the match.</div>
-                    </div>
-                    <div class="styles__ContentWrapper-sc-1f49zhi-3 eqkTkf">
-                        <div class="content-wrapper">
-                            <div class="content" id="earn">
-                                <h2>TOURNAMENT</h2>
-                                <div>Tournament Predictions is a special tournament mechanism. Where users will receive Reward every time they correctly predict the results of the match in World Cup 2022.</div>
-                            </div>
-                            <div class="image mobile">
-                                <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="video-line" src="https://fifasport.io/img/maguire.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                        alt="video-line" src="https://fifasport.io/img/maguire.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                    /></div>
-                            </div>
-                            <div class="content" id="how-it-work">
-                                <h2>PREDICTION</h2>
-                                <div>Additionally, we will publish predictions for the result of big sporting Tournament including The NBA, Premier League, UEFA Champion League, E-Sport, and more.</div>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="video-line" src="https://fifasport.io/img/maguire.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                    alt="video-line" src="https://fifasport.io/img/maguire.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                /></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="styles__FeatureWrapper-sc-1oraozy-0 fvJTil">
-                <div class="styles__Feature-sc-1oraozy-1 gxRhCf container">
-                    <div class="image">
-                        <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="staidum-transpa" src="https://fifasport.io/img/staidum-transpa.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                alt="staidum-transpa" src="https://fifasport.io/img/staidum-transpa.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                            /></div>
-                    </div>
-                    <div id="features" class="flag"></div>
-                    <div class="des">Fan NFTs are your digital assets of your favorite sports teams. Fan NFTs, unlike regular memberships, never expires and is yours to keep! By owning the NFT of your favorite sports team, you can receive a huge reward of <b>$FFS</b>                        &amp;
-                        <b>$BNB</b>. The revenue from the sale of NFT will be used to reward the holders of NFT.</div>
-                </div>
-            </section>
+
             <section class="styles__TransactionFeeWrapper-sc-1ww12qg-0 eBXsum">
+                <div class="htb-sg-wrap quick container">
+                    <h2 class="h1">Quick Start Guide</h2>
+                    <div class="qsg-wrap">
+                        <div class="qsg-line">
+                            <div class="qsg-line-left">
+                                <div class="qsg-number-wrap">
+                                    <div>1</div>
+                                </div>
+                                <div class="qsg-yellow-line"></div>
+                            </div>
+                            <div class="qsg-line-right">
+                                <h3 class="h3 qsg">Create MetaMask wallet</h3>
+                                <p class="p">Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive Fifa Official Token.</p>
+                            </div>
+                        </div>
+                        <div class="qsg--divider"></div>
+                        <div class="qsg-line">
+                            <div class="qsg-line-left">
+                                <div class="qsg-number-wrap">
+                                    <div>2</div>
+                                </div>
+                                <div class="qsg-yellow-line"></div>
+                            </div>
+                            <div class="qsg-line-right">
+                                <h3 class="h3 qsg">Send BNB or BUSD Bep20 to your wallet</h3>
+                                <p class="p">You can buy BNB or BUSD transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance. Make sure to use the Smart Chain network when transfering BNB.</p>
+                            </div>
+                        </div>
+                        <div class="qsg--divider"></div>
+                        <div class="qsg-line">
+                            <div class="qsg-line-left">
+                                <div class="qsg-number-wrap">
+                                    <div>3</div>
+                                </div>
+                                <div class="qsg-yellow-line"></div>
+                            </div>
+                            <div class="qsg-line-right">
+                                <h3 class="h3 qsg">Connect your wallet to PancakeSwap</h3>
+                                <p class="p">Access your wallet to Pancakeswap by clicking ‘Connect to a wallet’ and selecting MetaMask.</p>
+                            </div>
+                        </div>
+                        <div class="qsg--divider"></div>
+                        <div class="qsg-line">
+                            <div class="qsg-line-left">
+                                <div class="qsg-number-wrap">
+                                    <div>4</div>
+                                </div>
+                                <div class="qsg-yellow-line"></div>
+                            </div>
+                            <div class="qsg-line-right">
+                                <h3 class="h3 qsg">Swap BNB or BUSD for Fifa Official Token</h3>
+                                <p class="p">You can start swapping as soon as you have Fifa Official Token. available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="styles__TransactionFee-sc-1ww12qg-1 guBBqt container" id="transaction-fee">
                     <h1>TRANSACTION FEE</h1>
                     <div class="content">
@@ -2028,23 +2315,287 @@
                             /></div>
                     </div>
                 </div>
+                <style>
+                    .canvasInfo {
+                        color: white;
+                        font-size: 20px;
+                        width: 300px;
+                    }
+                    
+                    .canvasInfo p {
+                        font-family: Arial, Helvetica, sans-serif;
+                        opacity: 0.8;
+                        font-weight: 600;
+                    }
+                    
+                    .can {
+                        position: relative;
+                    }
+                    
+                    .canvasInfoRight {}
+                    
+                    .i1 {
+                        position: absolute;
+                        right: -320px;
+                        top: 140px;
+                        font-size: 30px;
+                    }
+                    
+                    .i2 {
+                        position: absolute;
+                        right: -230px;
+                        top: initial;
+                        bottom: 150px;
+                        font-size: 25px;
+                    }
+                    
+                    .i3 {
+                        position: absolute;
+                        right: 150px;
+                        top: initial;
+                        bottom: 40px;
+                        font-size: 23px;
+                    }
+                    
+                    .i4 {
+                        position: absolute;
+                        left: 10px;
+                        top: initial;
+                        bottom: 205px;
+                    }
+                    
+                    .i4 .i_border {
+                        transform: rotate(145deg);
+                        top: 0px;
+                        left: 40px;
+                    }
+                    
+                    .i5 {
+                        position: absolute;
+                        left: -150px;
+                        top: initial;
+                        bottom: 455px;
+                    }
+                    
+                    .i5 .i_border {
+                        transform: rotate(0);
+                        top: 40px;
+                        left: 120px;
+                    }
+                    
+                    .i6 {
+                        position: absolute;
+                        left: -70px;
+                        top: 140px;
+                        bottom: initial;
+                        font-size: 14px;
+                    }
+                    
+                    .i6 .i_border {
+                        transform: rotate(20deg);
+                        top: 50px;
+                        left: 120px;
+                        width: 30px;
+                    }
+                    
+                    .i7 {
+                        position: absolute;
+                        left: 110px;
+                        top: 80px;
+                        bottom: initial;
+                        font-size: 14px;
+                    }
+                    
+                    .i7 .i_border {
+                        transform: rotate(45deg);
+                        top: 35px;
+                        left: 30px;
+                        width: 20px;
+                    }
+                    
+                    .i8 {
+                        position: absolute;
+                        left: 240px;
+                        top: 20px;
+                        bottom: initial;
+                        font-size: 14px;
+                    }
+                    
+                    .i8 .i_border {
+                        transform: rotate(75deg);
+                        top: 48px;
+                        left: 20px;
+                        width: 10px;
+                    }
+                    
+                    .i9 {
+                        position: absolute;
+                        left: 310px;
+                        top: 10px;
+                        bottom: initial;
+                        font-size: 14px;
+                    }
+                    
+                    .i9 .i_border {
+                        transform: rotate(90deg);
+                        top: 48px;
+                        left: 15px;
+                        width: 10px;
+                    }
+                    
+                    .i3 .i_border {
+                        transform: rotate(90deg);
+                        top: -30px;
+                        left: 30px;
+                    }
+                    
+                    .i2 .i_border {
+                        transform: rotate(35deg);
+                        top: 10px;
+                        left: -72px;
+                    }
+                    
+                    .i_border {
+                        border: 1px solid silver;
+                        position: absolute;
+                        width: 50px;
+                        transform: rotate(145deg);
+                        left: -72px;
+                        top: 50px;
+                        border-radius: 50px;
+                    }
+                    
+                    .i3 p {
+                        padding-left: 40px;
+                    }
+                    
+                    .i8 p {
+                        padding-left: 10px;
+                    }
+                    
+                    .i9 p {
+                        padding-left: 10px;
+                    }
+                    
+                    .tokens {
+                        font-size: 60px;
+                        color: white;
+                        text-align: center;
+                        margin-top: 50px;
+                    }
+                </style>
+                <h1 class="tokens">TOKENOMICS</h1>
                 <div class="can">
-                    <canvas id="myChart" style=""></canvas>
+
+                    <canvas id="myChart" style="">
+            
+                    </canvas>
+                    <div class="canvasInfoRight">
+                        <div class="canvasInfo i1">
+                            <div class="i_border"></div>
+                            <span>Burning</span>
+                            <p>30%</p>
+                        </div>
+                        <div class="canvasInfo i2">
+                            <span>Listing Binance</span>
+                            <p>17%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <!-- var xValues = ['Burning', 'Listing on Binance', 'Advertising', 'IDO', 'Listing on ByBiy', 'Listing on Pancakeswap', 'Staking', 'Other', 'Team']; -->
+                        <div class="canvasInfo i3">
+                            <span>Advertising</span>
+                            <p>14%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i4">
+                            <span>IDO</span>
+                            <p>10%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i5">
+                            <span>Listing on ByBiy</span>
+                            <p>10%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i6">
+                            <span>Listing <br>on Pancakeswap</span>
+                            <p>7%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i7">
+                            <span>Staking</span>
+                            <p>5%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i8">
+                            <span>Other</span>
+                            <p>5%</p>
+                            <div class="i_border"></div>
+                        </div>
+                        <div class="canvasInfo i9">
+                            <span>Team</span>
+                            <p>2%</p>
+                            <div class="i_border"></div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+            <style>
+                .list .justify-content-center {
+                    align-items: center;
+                }
+                
+                .kanOLd .list .partner {
+                    width: 240px;
+                    height: auto;
+                }
+                
+                .widthless {
+                    width: 120px !important;
+                }
+                
+                .kanOLd {
+                    padding-top: 100px;
+                }
+            </style>
             <section class="styles__PartnerWrapper-sc-1cleo7d-0 oQLlc">
                 <div class="styles__Partner-sc-1cleo7d-1 kanOLd container">
                     <h1>PARTNERS</h1>
                     <div class="list">
                         <div class="justify-content-center row">
                             <div class="col-6 col-md-4 col-lg-3">
-                                <div class="partner"><img src="https://fifasport.io/img/partners/pinksale.png" alt="icon-plus" /></div>
+                                <div class="partner"><img src="img/binance.svg" alt="icon-plus" /></div>
                             </div>
                             <div class="col-6 col-md-4 col-lg-3">
-                                <div class="partner"><img src="https://fifasport.io/img/partners/coinsult.png" alt="icon-plus" /></div>
+                                <div class="partner"><img src="img/mm.png" alt="icon-plus" /></div>
                             </div>
                             <div class="col-6 col-md-4 col-lg-3">
-                                <div class="partner"><img src="https://fifasport.io/img/partners/contractchecker.png" alt="icon-plus" /></div>
+                                <div class="partner"><img src="img/visa.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner widthless"><img src="img/qatar.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner"><img src="img/hyu.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner"><img src="img/wanda.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner"><img src="img/cola.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner widthless"><img src="img/adidas.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner"><img src="img/Certik.svg" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner"><img src="img/sony.png" alt="icon-plus" /></div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="partner widthless"><img src="img/ea.png" alt="icon-plus" /></div>
                             </div>
                         </div>
                     </div>
@@ -2057,7 +2608,7 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="https://twitter.com/FiFaSportBSC" target="_blank" rel="noreferrer">
+                                    <a href="https://twitter.com/FIFAWorldCup?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noreferrer">
                                         <div>
                                             <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="twitter-logo" src="https://fifasport.io/img/social/twit-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
                                                     alt="twitter-logo" src="https://fifasport.io/img/social/twit-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
@@ -2066,7 +2617,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://t.me/FiFaSportChannel" target="_blank" rel="noreferrer">
+                                    <a href="https://t.me/FifaOfficialToken" target="_blank" rel="noreferrer">
                                         <div>
                                             <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="tele-logo" src="https://fifasport.io/img/social/tl-channel-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
                                                     alt="tele-logo" src="https://fifasport.io/img/social/tl-channel-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
@@ -2074,31 +2625,11 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="https://t.me/FiFaSportGroup" target="_blank" rel="noreferrer">
-                                        <div>
-                                            <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="tele-logo" src="https://fifasport.io/img/social/tele-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                                    alt="tele-logo" src="https://fifasport.io/img/social/tele-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                /></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/kKKWWK2msb" target="_blank" rel="noopener noreferrer">
-                                        <div>
-                                            <div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0"><noscript><img alt="ig-logo" src="https://fifasport.io/img/social/discord-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/></noscript><img
-                                                    alt="ig-logo" src="https://fifasport.io/img/social/discord-p.png" decoding="async" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
-                                                /></div>
-                                        </div>
-                                    </a>
-                                </li>
+
                             </ul>
                         </nav>
                     </div>
-                    <div class="contact-us">
-                        <div>Contact us</div>
-                        <div>contact@fifasport.io</div>
-                    </div>
+
                     <div class="copyright">Copyright © 2022 FIFASPORT. All Rights Reserved</div>
                 </div>
             </footer>
@@ -2190,6 +2721,8 @@
 
             labels: xValues,
             datasets: [{
+                // borderWidth: [3, 3, 3, 3, 3, 3, 3, 3],
+                borderColor: ['#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336', '#8C1336'],
                 backgroundColor: [
                     'rgba(41, 121, 255, 1)',
                     'rgba(38, 198, 218, 1)',
@@ -2214,12 +2747,20 @@
         }
 
         var options = {
-
-
+            aspectRatio: 1,
+            layout: {
+                padding: {
+                    // Any unspecified dimensions are assumed to be 0                     
+                    bottom: 25,
+                    left: 30,
+                    top: 20,
+                    right: 30,
+                }
+            },
             maintainAspectRatio: aspectRatio,
-
+            cutoutPercentage: 40,
             title: {
-                display: true,
+                display: false,
                 text: "Allocation",
                 fontColor: 'white',
 
@@ -2230,10 +2771,11 @@
 
             legend: {
 
-
+                display: false,
                 fullWidth: false,
-
+                position: 'right',
                 color: 'white',
+                padding: 20,
                 labels: {
                     fontSize: 20,
                     fontFamily: 'Arial, sans-serif',
@@ -2275,35 +2817,80 @@
             type: 'doughnut',
             data: data,
             options: options,
-        });
-        Chart.plugins.register({
-            afterDatasetsDraw: function(chartInstance, easing) {
-                // To only draw at the end of animation, check for easing === 1
-                var ctx = chartInstance.chart.ctx;
-                chartInstance.data.datasets.forEach(function(dataset, i) {
-                    var meta = chartInstance.getDatasetMeta(i);
-                    if (!meta.hidden) {
-                        meta.data.forEach(function(element, index) {
-                            // Draw the text in black, with the specified font
-                            ctx.fillStyle = 'black';
-                            var fontSize = 20;
-                            var fontStyle = 'bold';
-                            var fontFamily = 'Arial';
-                            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
-                            // Just naively convert to string for now
-                            var dataString = dataset.data[index].toString();
-                            // Make sure alignment settings are correct
-                            ctx.textAlign = 'center';
-                            ctx.textBaseline = 'middle';
-                            var padding = 5;
-                            var position = element.tooltipPosition();
-                            ctx.fillText(dataString + '%', position.x, position.y - (fontSize / 200) - padding + 5);
-                        });
+            plugins: [{
+                beforeInit: function(chart, options) {
+                    const originalFit = chart.legend.fit;
+
+                    // Override the fit function
+                    chart.legend.fit = function fit() {
+                        // Call original function and bind scope in order to use `this` correctly inside it
+                        originalFit.bind(chart.legend)();
+                        // Change the height as suggested in another answers
+                        this.height += 15;
                     }
-                });
-            },
+                },
+                beforeDraw: chart => {
+                    var ctx = chart.chart.ctx;
+                    ctx.save();
+                    ctx.beginPath();
+
+                    // ctx.fillStyle = 'black';
+                    // ctx.shadowColor = 'black';
+                    // ctx.shadowBlur = 120;
+
+                    const image = new Image();
+                    image.src = 'img/logo-5.png';
+
+                    const x = chart.chart.width / 2 - 125;
+                    const y = chart.chart.height / 2 - 128;
+                    ctx.drawImage(image, x, y, image.width * 0.8, image.height * 0.8);
+                    // ctx.arc(x, y, 95, 0, Math.PI * 2, false);
+                    ctx.fill();
+                    ctx.restore();
+
+
+                    let _fill = ctx.fill;
+                    ctx.fill = function() {
+                        ctx.save();
+                        ctx.shadowColor = '#836C73';
+                        ctx.shadowBlur = 30;
+                        ctx.shadowOffsetX = 0;
+                        ctx.shadowOffsetY = 0;
+                        _fill.apply(this, arguments)
+                        ctx.restore();
+                    }
+                }
+            }],
 
         });
+        // Chart.plugins.register({
+        //     afterDatasetsDraw: function(chartInstance, easing) {
+        //         // To only draw at the end of animation, check for easing === 1
+        //         var ctx = chartInstance.chart.ctx;
+        //         chartInstance.data.datasets.forEach(function(dataset, i) {
+        //             var meta = chartInstance.getDatasetMeta(i);
+        //             if (!meta.hidden) {
+        //                 meta.data.forEach(function(element, index) {
+        //                     // Draw the text in black, with the specified font
+        //                     ctx.fillStyle = 'black';
+        //                     var fontSize = 20;
+        //                     var fontStyle = 'bold';
+        //                     var fontFamily = 'Arial';
+        //                     ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+        //                     // Just naively convert to string for now
+        //                     var dataString = dataset.data[index].toString();
+        //                     // Make sure alignment settings are correct
+        //                     ctx.textAlign = 'center';
+        //                     ctx.textBaseline = 'middle';
+        //                     var padding = 5;
+        //                     var position = element.tooltipPosition();
+        //                     ctx.fillText(dataString + '%', position.x, position.y - (fontSize / 200) - padding + 5);
+        //                 });
+        //             }
+        //         });
+        //     },
+
+        // });
     </script>
 </body>
 
